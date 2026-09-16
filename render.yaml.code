@@ -1,0 +1,9 @@
+services:
+  - type: static
+    name: warzonex-game
+    buildCommand: echo "Build complete"
+    staticPublishPath: .
+    routes:
+      - path: /
+        match: none
+        template: /index.html
