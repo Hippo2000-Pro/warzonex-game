@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontline Assault</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hud-shell">
+      <div class="title-box">
+        <h1>Frontline Assault</h1>
+      </div>
+      <div id="hud" class="hud-panel">
+        <div><span>Vie</span><strong id="healthValue">100</strong></div>
+        <div><span>Score</span><strong id="scoreValue">0</strong></div>
+        <div><span>Vague</span><strong id="waveValue">1</strong></div>
+        <div><span>Arme</span><strong id="weaponValue">Rifle</strong></div>
+        <div><span>Mission</span><strong id="missionValue">Nettoyer le secteur</strong></div>
+        <div><span>Pouvoirs</span><strong id="skillValue">Q/H/F</strong></div>
+      </div>
+    </div>
+
+    <div class="briefing-box">
+      <span class="briefing-label">Briefing tactique</span>
+      <div id="briefingText">Mission de reconnaissance. Avant-garde en route.</div>
+    </div>
+
+    <canvas id="gameCanvas" width="1280" height="720"></canvas>
+
+    <div id="messageBox" class="message-box hidden">
+      <h2 id="messageTitle">Mission terminée</h2>
+      <p id="messageText">Tu as perdu.</p>
+      <button id="restartBtn">Rejouer</button>
+    </div>
+
+    <script type="module" src="src/game.js"></script>
+  </body>
+</html>

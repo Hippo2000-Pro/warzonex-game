@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: warzonex-game
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: ./
