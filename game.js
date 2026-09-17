@@ -1,7 +1,7 @@
-import { Player } from './entities/Player.js';
-import { Enemy } from './entities/Enemy.js';
-import { getWeapon } from './systems/Weapons.js';
-import { World } from './world/World.js';
+import { Player } from './Player.js';
+import { Enemy } from './Enemy.js';
+import { getWeapon } from './Weapons.js';
+import { World } from './World.js';
 
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
